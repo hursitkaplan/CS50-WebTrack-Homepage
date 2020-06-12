@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Website | Quotes</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <script src="javascript/script.js"></script>
+        <script>
+            var temp = 0;
+        </script>
+
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+              width: 100%;
+              height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="main-title">
+                    <h1>Helperstain</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Recommended <br>Courses</a></li>
+                        <li class="current"><a href="quotes.html">Quotes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+
+        <div class="container">
+            <blockquote class="blockquote">
+                <p class="mb-0">“It’s fine to celebrate success but it is more important to heed the lessons of failure.”</p>
+                <footer class="blockquote-footer">Bill Gates, Co-founder of Microsoft</footer>
+            </blockquote>
+            <button type="button" class="btn btn-primary" onclick="change_quote()">Change quote</button>
+        </div>
+        <div class="container">
+            <blockquote class="blockquote">
+                <p class="mb-0">"You can't have everything you want, but you can have the things that really matter to you."</p>
+                <footer class="blockquote-footer"><cite title="Source Title">Marissa Mayer</cite>, President and CEO of Yahoo!</footer>
+            </blockquote>
+        </div>
+
+        <div class="container" style="width: 60%;">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="margin: 50px 0;">
+                <div class="carousel-item active">
+                    <img src="xkcd/correlation.png" alt="Correlation">
+                </div>
+                <div class="carousel-item">
+                    <img src="xkcd/moon_landing.png" alt="Moon Landing">
+                </div>
+                <div class="carousel-item">
+                    <img src="xkcd/weekend.png" alt="Weekend">
+                </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <footer class="blockquote-footer"><cite title="Source Title"><a href="https://xkcd.com">"Images from xkcd.com"</a></cite>, by xkcd</footer>
+        </div>
+
+        <footer id="copyright" style="margin-top: 50px;">
+            <div class="container">
+                <p>My Website Copyright &copy; 2020</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,240 @@
+body
+{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Header */
+header
+{
+    background-color: rgb(40, 49, 82);
+    color: white;
+    padding-top: 25px;
+    min-height: 70px;
+    border-bottom: 3px solid black;
+}
+
+header a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header a:hover
+{
+    color: black;
+    font-weight: bold;
+}
+
+header .current a
+{
+    color: black;
+    font-weight: bold;
+}
+
+header li
+{
+    float: left;
+    padding: 0 20px 20px 20px;
+}
+
+header #main-title
+{
+    float: left;
+}
+
+header #main-title h1
+{
+    margin: 0;
+}
+
+header nav
+{
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Showcase */
+#showcase
+{
+    min-height: 300px;  
+    background-image: url("../images/showcase.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+}
+
+#showcase h2
+{
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#showcase p
+{
+    font-size: 20px;
+}
+
+/* Main */
+#main
+{
+    padding-top: 20px;
+    min-height: 280px;
+    background-color: #ccc;
+    padding-bottom: 30px;
+}
+
+/* Introduction */
+
+#introduction
+{
+    width: 90%;
+    min-height: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+#introduction h3
+{
+    font-size: 25px;
+}
+
+/* Courses */
+#courses
+{
+    margin-top: 40px;
+}
+
+.course
+{
+    min-height: 240px;
+}
+
+.course-link
+{
+    float:left;
+    width: 40%;
+    text-align: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.course-link img
+{
+    max-width: 80%;
+    max-height: 180px;
+}
+
+.course-text
+{
+    float: right;
+    width: 60%;
+}
+
+.course-text h3
+{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+/* About */
+#about
+{
+    min-height: 300px;
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+#about h2
+{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#about p
+{
+    font-size: 19px;
+}
+
+/* Copyright */
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(40, 49, 82);
+    color: white;
+}
+
+/* Carousel */
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators 
+{
+    filter: invert(100%);
+}
+
+/* Blockquote */
+.blockquote
+{
+    padding-top: 50px;
+}
+
+/* Media Query */
+@media(max-width: 768px)
+{
+    header #main-title, 
+    header nav,
+    header nav li
+    {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header li br
+    {
+        display: none;
+    }
+
+    header li
+    {
+        padding: 5px;
+    }
+
+    header ul
+    {
+        padding-top: 15px;
+        padding-bottom: 16px;
+    }
+}
+
+
+
+
+
